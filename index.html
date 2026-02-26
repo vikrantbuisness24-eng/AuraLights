@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Customised Light Gifts - AuraLights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .glow {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,215,0,0.4), transparent);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: float 10s infinite alternate;
+            z-index: -1;
+        }
+
+        .glow:nth-child(1) { top: -100px; left: -100px; }
+        .glow:nth-child(2) { bottom: -100px; right: -100px; animation-delay: 5s; }
+
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(50px); }
+        }
+
+        header {
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        .product {
+            background: rgba(255,255,255,0.08);
+            width: 320px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            transition: 0.4s ease;
+            box-shadow: 0 0 20px rgba(255,215,0,0.2);
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(255,215,0,0.7);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+
+        .product img:hover {
+            box-shadow: 0 0 30px gold;
+        }
+
+        h2 {
+            margin-top: 15px;
+        }
+
+        .price {
+            font-size: 26px;
+            color: #ffd700;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .shipping {
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        button {
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px gold;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 20px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        .popup {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: gold;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 0 20px gold;
+            animation: fadeOut 4s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow"></div>
+
+<div class="popup">
+    Made with love ❤️ AuraLights!
+</div>
+
+<header>
+    ✨ AuraLights – Customised Crystal Gifts ✨
+</header>
+
+<div class="container">
+
+    <div class="product">
+        <img src="heart-dolphin.png" alt="3D Dolphin Crystal Lamp">
+
+        <h2>3D Dolphin Crystal Ball Lamp</h2>
+
+        <div class="price">₹249</div>
+        <div class="shipping">
+            + Shipping (₹100 or less)<br>
+            Contact on WhatsApp for more details
+        </div>
+
+        <br>
+
+        <button onclick="window.location.href='https://wa.me/918853071784'">
+            Order Now on WhatsApp
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 AuraLights | Designed with passion ✨
+</footer>
+
+</body>
+</html>
